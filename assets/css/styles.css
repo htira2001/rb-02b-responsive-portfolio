@@ -6,12 +6,6 @@
 	--font-size-lg2: 1.5rem;
 	--font-size-md: 1.2rem;
 	--font-size-sm: 1rem;
-	--dark-bg-color: #1e3e76;
-	--light-font-color: #fff;
-	--light-border-shadow-color: #fafba5;
-	--nav-bg-color: #fff;
-	--nav-border-color: #ccc;
-	--nav-right-font-color: #b7b7b7;
 	--color1: #1e3e76;
 	--color2: #fff;
 	--color3: #b7b7b7;
@@ -23,23 +17,14 @@
 html, body {
   height: 100%;
 }
-
 body {
 	display: flex;
   flex-direction: column;
 	background-image: url("../images/concrete_seamless.png");
 }
-
-.center {
-	display: flex;
-  justify-content: center;
-	align-items: center;
-}
-
 h1 {
 	font-size: var(--font-size-lg1);
 }
-
 p {
 	font-size: var(--font-size-md);
 	line-height: 1.5;
@@ -52,7 +37,6 @@ nav {
 	border-bottom: 2px solid var(--color4);
 	box-shadow: 1px 1px 2px 2px var(--color5);
 }
-
 .nav-left {
 	box-sizing: border-box;
 	padding: 0 20px;
@@ -60,23 +44,19 @@ nav {
 	font-size: var(--font-size-lg1);
 	color: var(--color2);
 }
-
 .nav-right {
 	box-sizing: border-box;
 	padding: 0 20px;
 	font-size: var(--font-size-lg2);
 	color: var(--color3);
 }
-
 .nav-right span {
 	margin: 0 10px;
 }
-
 .nav-right a {
 	color: var(--color3);
 	text-decoration: none;
 }
-
 .nav-right a:hover {
 	color: var(--color1);
 }
@@ -183,42 +163,36 @@ button {
 	font-size: var(--font-size-md);
 	overflow: auto;
 }
-
 .portfolio-item-container {
 	display: block;
 	float: left;
-	width: 33.33%;
-	height: 200px;
-	padding: 0 20px 20px 0;
+	padding: 10px;
 	box-sizing: border-box;
 }
-
 .portfolio-item {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-color: aliceblue;
 	border-radius: 5px;
 }
-
 .portfolio-item img {
 	width: 100%;
-	height: 180px;
 	object-fit: cover;
 	border-radius: 5px;
 }
-
 .portfolio-item p {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 40px;
-	background-color: var(--dark-bg-color);
-	color: var(--light-font-color);
+	line-height: 40px;
+	text-align: center;
+	background-color: var(--color1);
+	color: var(--color2);
 	box-sizing: border-box;
 	box-shadow: 
-		inset 0px 11px 8px -11px var(--light-border-shadow-color),
-		inset 0px -11px 8px -11px var(--light-border-shadow-color);
+		inset 0px 11px 8px -11px var(--color5),
+		inset 0px -11px 8px -11px var(--color5);
 }
 
 /* Media Queries */
@@ -255,6 +229,12 @@ button {
 		width: 100%;
 		max-height: 400px;
 	}
+	.portfolio-item-container {
+		width: 100%;
+	}
+	.portfolio-item img {
+		max-height: 300px;
+	}
 }
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
@@ -278,6 +258,12 @@ button {
 		max-width: 740px;
 		margin: 0 auto;
 	}
+	.portfolio-item-container {
+		width: 50%;
+	}
+	.portfolio-item img {
+		height: 250px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -300,5 +286,11 @@ button {
 		width: 100%;
 		max-width: 960px;
 		margin: 0 auto;
+	}
+	.portfolio-item-container {
+		width: 33.33%;
+	}
+	.portfolio-item img {
+		height: 200px;
 	}
 }
