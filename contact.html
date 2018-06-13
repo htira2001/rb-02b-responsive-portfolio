@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>
-    function show_alert() {
+    function showAlert() {
       var nameValue = document.getElementById("name").value;
       var messageValue = document.getElementById("message").value;
       if (nameValue && messageValue) {
@@ -28,35 +28,39 @@
       <div class="nav-content-container">
         <div class="nav-left center">Zeus</div>
         <div class="nav-right center">
-          <a href="/rb-00-portfolio/">About</a> 
+          <a href="/rb-02-responsive-portfolio/">About</a> 
           <span>|</span>
-          <a href="/rb-00-portfolio/portfolio">Portfolio</a>
+          <a href="/rb-02-responsive-portfolio/portfolio">Portfolio</a>
           <span>|</span>
           <a href="#">Contact</a>
         </div>
       </div>
     </nav>
     <main>
-      <header>
-        <h1>Contact</h1>
-      </header>
-      <hr>
-      <section>
-        <form id="contactForm">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="John Smith">
-          <label for="email">Email</label>
-          <input id="email" type="text" name="email" placeholder="example@gmail.com">
-          <label for="message">Message</label>
-          <textarea id="message" type="text" name="message" rows="8"></textarea>
-        </form>
-        <button type="submit" form="contactForm" value="Submit" onclick="show_alert();">Submit</button>
-      </section>
+      <div class="main-content-container">
+        <header>
+          <h1>Contact</h1>
+        </header>
+        <hr>
+        <section>
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="John Smith">
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email" placeholder="example@gmail.com">
+            <label for="message">Message</label>
+            <textarea id="message" type="text" name="message" rows="8"></textarea>
+          </form>
+          <button type="submit" form="contactForm" value="Submit" onclick="showAlert();">Submit</button>
+        </section>
+      </div>
     </main>
   </div>
+  
+  <!-- Footer -->
   <footer>
     <div class="footer-content-container">
-      <div class="center">&copy; 2018</div>
+      <div class="footer">&copy; 2018</div>
     </div>
   </footer>
 </body>

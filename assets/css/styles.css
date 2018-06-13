@@ -126,38 +126,6 @@ footer {
 	font-family: var(--font-family-content);
 }
 
-/* Contact Page CSS */
-label, input {
-	display: block;
-}
-
-label {
-	margin-bottom: 5px;
-	font-size: var(--font-size-md);
-}
-
-input, textarea {
-	width: 100%;
-	margin-bottom: 15px;
-	font-size: var(--font-size-md);
-	padding: 8px 5px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-}
-
-input:focus, textarea:focus {
-	background-color: var(--light-border-shadow-color);
-}
-
-button {
-	width: 100px;
-	font-size: var(--font-size-md);
-	padding: 8px 5px;
-	border-radius: 5px;
-	color: var(--light-font-color);
-	background-color: var(--dark-bg-color);
-}
-
 /* Portfolio Page CSS */
 .portfolio-section {
 	font-size: var(--font-size-md);
@@ -193,6 +161,39 @@ button {
 	box-shadow: 
 		inset 0px 11px 8px -11px var(--color5),
 		inset 0px -11px 8px -11px var(--color5);
+}
+
+/* Contact Page CSS */
+label, input {
+	display: block;
+}
+label {
+	margin-bottom: 5px;
+	font-size: var(--font-size-md);
+}
+input, 
+textarea {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 15px;
+	font-size: var(--font-size-md);
+	padding: 8px 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+input:focus, 
+textarea:focus {
+	background-color: var(--color5);
+}
+button {
+	width: 100px;
+	font-size: var(--font-size-md);
+	padding: 8px 5px;
+	border-radius: 5px;
+	color: var(--color2);
+	background-color: var(--color1);
 }
 
 /* Media Queries */
