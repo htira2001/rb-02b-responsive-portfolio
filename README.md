@@ -4,4 +4,4 @@
 
 * basic portfolio re-created with CSS `@media` queries for responsiveness
 * no Bootstrap utilized
-* [project link]()
+* [project link](https://ats89.github.io/rb-02-responsive-portfolio/)
