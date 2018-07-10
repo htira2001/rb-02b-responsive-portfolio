@@ -1,4 +1,4 @@
-# rb-02-responsive-portfolio
+# rb-02b-responsive-portfolio
 
 ## Responsive Portfolio
 
